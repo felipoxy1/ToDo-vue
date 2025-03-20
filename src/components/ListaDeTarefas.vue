@@ -13,3 +13,8 @@ const props = defineProps(['tarefas', 'tarefasPendetes'])
         </li>
     </ul>
 </template>
+<style scoped>
+.done {
+    text-decoration: line-through;
+}
+</style>

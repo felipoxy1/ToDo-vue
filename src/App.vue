@@ -7,18 +7,6 @@
     filtro: 'todas',
     tarefaTemp: '',
     tarefas: [
-      {
-        titulo: "Estudar ES6",
-        finalizada: false,
-      },
-      {
-        titulo: "Lavar a louca",
-        finalizada: true,
-      },
-      {
-        titulo: "Jogar cs",
-        finalizada: false
-      }
     ]
   })
 
@@ -60,9 +48,3 @@ const cadastraTarefa = () => {
     <ListaDeTarefas :tarefas-pendentes="getTarefasPendentes().length" :tarefas="getTarefasFiltradas()" />
   </div>
 </template>
-
-<style scoped>
-.done {
-  text-decoration: line-through;
-}
-</style>
